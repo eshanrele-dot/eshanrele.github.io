@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eshan Rele - Portfolio</title>
+    <style>
+        :root {
+            --primary: #0a2540;
+            --secondary: #0073e6;
+            --text: #2d3748;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--bg);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0 0 0.5rem 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 1.1rem;
+            color: #e2e8f0;
+        }
+
+        .contact-links {
+            margin-top: 1rem;
+        }
+
+        .contact-links a {
+            color: #63b3ed;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: 600;
+        }
+
+        .contact-links a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        section {
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            color: var(--primary);
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-top: 1rem;
+        }
+
+        .skill-badge {
+            background-color: #ebf8ff;
+            color: #2b6cb0;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            border: 1px solid #bee3f8;
+        }
+
+        .project-card {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .project-card:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .project-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: var(--primary);
+            margin-bottom: 0.25rem;
+        }
+
+        .project-role {
+            font-size: 0.9rem;
+            color: #718096;
+            margin-bottom: 0.75rem;
+        }
+
+        .project-links a {
+            display: inline-block;
+            margin-top: 0.5rem;
+            color: var(--secondary);
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .project-links a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #718096;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Eshan Rele</h1>
+        <p>Supply Chain Management & Business Analytics Student at Rutgers Business School</p>
+        <div class="contact-links">
+            <a href="mailto:eshan.rele@gmail.com">Email</a> |
+            <a href="https://www.linkedin.com/in/eshan-rele-170ab32b9/" target="_blank">LinkedIn</a>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <!-- SECTION 1: Personal Statement (Rubric: 2 pts) -->
+        <section id="about">
+            <h2>Personal Statement</h2>
+            <p style="font-size: 1.15rem; line-height: 1.8; color: #2d3748;">
+                Driven Supply Chain Management and Business Analytics candidate with hands-on experience in strategic sourcing, e-commerce operations, and data-driven process optimization.
+            </p>
+        </section>
+
+        <!-- SECTION 2: Skills (Rubric: 2 pts) -->
+        <section id="skills">
+            <h2>Skills Showcase</h2>
+            <div class="skills-grid">
+                <span class="skill-badge">Excel</span>
+                <span class="skill-badge">SQL</span>
+                <span class="skill-badge">Python</span>
+                <span class="skill-badge">Power BI</span>
+                <span class="skill-badge">Tableau</span>
+                <span class="skill-badge">Google Sheets</span>
+                <span class="skill-badge">AWS</span>
+                <span class="skill-badge">Workday</span>
+                <span class="skill-badge">Lean Six Sigma Green Belt</span>
+                <span class="skill-badge">Strategic Sourcing</span>
+                <span class="skill-badge">Demand Planning</span>
+            </div>
+        </section>
+
+        <!-- SECTION 3: Projects Section (Rubric: 2 pts) -->
+        <section id="projects">
+            <h2>Featured Projects</h2>
+
+            <div class="project-card">
+                <div class="project-title">Inventory Replenishment & Safety Stock Model</div>
+                <div class="project-role">Rutgers Business School | Oct 2025 – Nov 2025</div>
+                <p>Built a reorder point model using lead time and demand variability in Excel. Created an interactive dashboard illustrating weeks-of-supply and stockout rates alongside scenario-based reorder recommendations.</p>
+                <div class="project-links">
+                    <a href="https://github.com" target="_blank">View Repository Code &rarr;</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-title">Lean Six Sigma Process Map & Root Cause Analysis</div>
+                <div class="project-role">Rutgers Business School | Mar 2025 – Apr 2025</div>
+                <p>Mapped a pick/pack workflow to identify key operational bottlenecks and implement quick wins[cite: 1]. Defined core KPIs (defect rate, rework time) and created a control plan to optimize workflow efficiency[cite: 1].</p>
+                <div class="project-links">
+                    <a href="https://github.com" target="_blank">View Project Details &rarr;</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-title">Vendor Risk Dashboard</div>
+                <div class="project-role">Horizon Blue Cross Blue Shield NJ | June 2026 – Aug 2026</div>
+                <p>Developed an interactive Power BI dashboard for supplier risk evaluation, assessing operational and financial risk metrics to support strategic sourcing decisions[cite: 1].</p>
+                <div class="project-links">
+                    <a href="https://github.com" target="_blank">View Dashboard Overview &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        &copy; 2026 Eshan Rele. Built for Portfolio Assignment.
+    </footer>
+
+</body>
+</html>
